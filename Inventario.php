@@ -69,7 +69,7 @@ include 'db.php';
 
         <section class="tarjeta">
 
-            <h3>Nuevo Registro</h3>
+            <h3>Nuevo Producto</h3>
 
             <form
                 id="formulario-registro"
@@ -93,6 +93,16 @@ include 'db.php';
                         type="text"
                         name="nombre"
                         placeholder="Ej. Buzo Azul"
+                        required>
+                </div>
+
+                 <div class="grupo-campo">
+                    <label>Descripcion del producto</label>
+
+                    <input
+                        type="text"
+                        name="descripcion"
+                        placeholder="Ej. Buzo azul de manga larga, ideal para el día a día"
                         required>
                 </div>
 
@@ -160,6 +170,7 @@ include 'db.php';
                         <tr>
                             <th>Código</th>
                             <th>Nombre</th>
+                            <th>Descripcion</th>
                             <th>Categoría</th>
                             <th>Unidades</th>
                             <th>Acciones</th>
@@ -184,6 +195,8 @@ include 'db.php';
                             <td><?php echo $fila['codigo']; ?></td>
 
                             <td><?php echo $fila['nombre']; ?></td>
+
+                             <td><?php echo $fila['descripcion']; ?></td>
 
                             <td><?php echo $fila['categoria']; ?></td>
 
