@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+    background-color: #fff;
+    margin: 10px;
+
+}
+.navbar {
+  background: #7d1535;
+  border-radius: 50px 50px 50px 0px;
+  padding: 2.5px 20px 2.5px 5px;
+  margin-right: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.seccionlogo{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.logo {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+.seccionlogo h1 {
+  color: white;
+  font-size: 32px;
+  font-weight: 400;
+}
+.menu {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+}
+#contenido{
+     display: flex;
+}
+.sidebar{
+    width: 70px;
+    height: auto;
+    min-height: 700px;
+    background: #7d1535;
+    padding: 30px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 0px 0px 50px 50px;
+}
+.sidebar button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+.lucide {
+    stroke: white;
+    color: white;
+    width: 32px;
+    height: 32px;
+    stroke-width: 2px;
+    transition: 0.3s;
+}
+.sidebar button:hover .lucide {
+    color: #ff9fb2;
+    transform: scale(1.1);
+}
+main {
+    flex-grow: 1;
+    background-color: #f4f4f7; 
+    margin: 20px;
+    border-radius: 40px; 
+    padding: 30px;
+    height: calc(100vh - 110px); 
+    overflow-y: auto; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.productospopulares h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.contenedorproductos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.tarjeta-producto {
+    text-align: center;
+}
+.tarjeta-producto img {
+    width: 250px; 
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.tarjeta-producto p {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.stats-dashboard {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr; 
+    gap: 20px;
+    margin-top: 20px;
+}
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+    text-align: center;
+}
+.chart-container h3 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #444;
+}
+.highlight-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #7d1535; 
+    margin-top: 10px;
+}
+.info-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.stat-box h4 {
+    color: #666;
+    font-size: 1rem;
+}

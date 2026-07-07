@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+    background-color: #fff;
+    margin: 10px;
+
+}
+.navbar {
+  background: #7d1535;
+  border-radius: 50px 50px 50px 0px;
+  padding: 2.5px 20px 2.5px 5px;
+  margin-right: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.seccionlogo{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.logo {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+.seccionlogo h1 {
+  color: white;
+  font-size: 32px;
+  font-weight: 400;
+}
+.menu {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+}
+#contenido{
+     display: flex;
+}
+.sidebar{
+    width: 70px;
+    height: auto;
+    min-height: 700px;
+    background: #7d1535;
+    padding: 30px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 0px 0px 50px 50px;
+}
+.sidebar button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+.lucide {
+    stroke: white;
+    color: white;
+    width: 32px;
+    height: 32px;
+    stroke-width: 2px;
+    transition: 0.3s;
+}
+.sidebar button:hover .lucide {
+    color: #ff9fb2;
+    transform: scale(1.1);
+}
+main {
+    flex-grow: 1;
+    background-color: #f4f4f7; 
+    margin: 20px;
+    border-radius: 40px; 
+    padding: 30px;
+    height: calc(100vh - 110px); 
+    overflow-y: auto; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.tarjeta {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.tarjeta h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #7d1535;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 8px;
+}
+
+/* FORMULARIO */
+#formulario-registro {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.grupo-campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.grupo-campo label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #444;
+}
+
+.grupo-campo input,
+.grupo-campo select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.grupo-campo input:focus,
+.grupo-campo select:focus {
+    border-color: #7d1535;
+    outline: none;
+}
+
+/* BOTÓN */
+.btn-guardar {
+    background: #7d1535;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-guardar:hover {
+    background: #12a884;
+}
+
+.btn-inventario {
+   display: inline-block;
+    background: #7d1535;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-inventario:hover {
+    background: #12a884;
+}
+
+/* TABLA */
+.tabla-responsiva {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    font-size: 14px;
+}
+
+th {
+    background: #f4f4f7;
+    color: #7d1535;
+}
+
+tr:hover {
+    background: #fafafa;
+}
